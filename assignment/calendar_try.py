@@ -11,7 +11,6 @@ class Node():
     def insert(self, node: 'Node') -> bool:
 
         if node.start < node.end: #Check for valid input
-            breakpoint()
             if node.start >= self.end:  # No overlap, insert as right child
                 if not self.right_child:
                     self.right_child = node
